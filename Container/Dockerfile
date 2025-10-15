@@ -6,7 +6,7 @@
 
 ## Base image: See <https://github.com/epiconnector/docker-rdev>
 
-FROM deepayansarkar/rdev:4.4
+FROM epiconnector/rdev:4.5
 
 #------------------------------------------------------------------------------
 # Basic initial system configuration
@@ -129,8 +129,7 @@ RUN chmod -R 777 /usr/local/lib/R/library \
 # Point nhanesA to local copies of HTML documentation
 
 RUN echo "NHANES_TABLE_BASE=/htmldoc" >> /usr/local/lib/R/etc/Renviron.site \
-    && echo "NHANES_TABLE_BASE=/htmldoc" >> /etc/environment \
-    && mkdir /htmldoc/Nchs && ln -s /htmldoc /htmldoc/Nchs/Nhanes
+    && echo "NHANES_TABLE_BASE=/htmldoc" >> /etc/environment
 
 # Create a mount point for host filesystem data and copy startup script
 RUN mkdir -p /HostData && mkdir -p /startup

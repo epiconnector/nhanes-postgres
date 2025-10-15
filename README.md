@@ -135,12 +135,13 @@ export CVERSION=`cat CONTAINER_VERSION`
 time docker build --progress plain --shm-size=2048M --platform=linux/amd64 --tag nhanes-postgres --build-arg COLLECTION_DATE=${CDATE} --build-arg CONTAINER_VERSION=${CVERSION} -f Container/Dockerfile . &> build.log
 ```
 
+
 To upload to docker hub:
 
 ```
 echo ${CVERSION}
-docker tag nhanes-postgres deepayansarkar/nhanes-postgresql:${CVERSION}
-docker push deepayansarkar/nhanes-postgresql:${CVERSION}
+docker tag nhanes-postgres epiconnector/nhanes-postgresql:${CVERSION}
+docker push epiconnector/nhanes-postgresql:${CVERSION}
 ```
 
 # Running

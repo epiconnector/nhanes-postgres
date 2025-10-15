@@ -5,7 +5,7 @@ cat(commandArgs(), fill = TRUE)
 ## clone served locally (see README)
 
 ## RAWDATALOC <- "https://raw.githubusercontent.com/deepayan/nhanes-snapshot/main/"
-RAWDATALOC <- "http://192.168.0.27:9849/snapshot/"
+RAWDATALOC <- "http://192.168.1.173:9849/snapshot/"
 
 ## would have been more general but does not always work
 ## RAWDATALOC <- "http://host.docker.internal:9849/snapshot/"
