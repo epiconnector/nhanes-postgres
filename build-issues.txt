@@ -1,0 +1,648 @@
+#14 80.75 ===  DOXPOL_I : downloading...inserting into DB...Warning in doTryCatch(return(expr), name, parentenv, handler) :
+#14 80.76   Column(s) specified as non-null do not exist in data: SEQN
+#14 80.77 
+--
+#14 185.8 ===  DRXFCD_H : downloading...inserting into DB...
+#14 185.8 Error : COPY returned error : ERROR:  invalid byte sequence for encoding "UTF8": 0xc9 0x20
+#14 185.8 CONTEXT:  COPY DRXFCD_H, line 8174
+#14 185.8 
+--
+#14 185.9 ===  DRXFCD_L : downloading...inserting into DB...Warning in doTryCatch(return(expr), name, parentenv, handler) :
+#14 185.9   Column(s) specified as non-null do not exist in data: SEQN
+#14 185.9 
+--
+#14 202.3 ===  DSII : downloading...inserting into DB...
+#14 203.2 Error : COPY returned error : ERROR:  invalid byte sequence for encoding "UTF8": 0x92
+#14 203.2 CONTEXT:  COPY DSII, line 63203
+#14 203.2 
+#14 203.2 ===  DSPI : downloading...inserting into DB...Error : COPY returned error : ERROR:  invalid byte sequence for encoding "UTF8": 0x92
+#14 203.4 CONTEXT:  COPY DSPI, line 6563
+#14 203.4 
+#14 203.4 
+--
+#14 324.1 ===  PAXMIN_G : downloading...Warning in download.file(datafile, destfile = TEMPDATA, quiet = TRUE) :
+#14 324.1   downloaded length 0 != reported length 14
+#14 324.1 Warning in download.file(datafile, destfile = TEMPDATA, quiet = TRUE) :
+#14 324.1   cannot open URL 'http://192.168.1.173:9849/snapshot/data/PAXMIN_G.csv.xz': HTTP status was '404 Not Found'
+#14 324.1 Error in download.file(datafile, destfile = TEMPDATA, quiet = TRUE) : 
+#14 324.1   cannot open URL 'http://192.168.1.173:9849/snapshot/data/PAXMIN_G.csv.xz'
+#14 324.1 
+#14 324.1 ===  PAXMIN_H : downloading...Warning in download.file(datafile, destfile = TEMPDATA, quiet = TRUE) :
+#14 324.1   downloaded length 0 != reported length 14
+#14 324.1 Warning in download.file(datafile, destfile = TEMPDATA, quiet = TRUE) :
+#14 324.1   cannot open URL 'http://192.168.1.173:9849/snapshot/data/PAXMIN_H.csv.xz': HTTP status was '404 Not Found'
+#14 324.1 Error in download.file(datafile, destfile = TEMPDATA, quiet = TRUE) : 
+#14 324.1   cannot open URL 'http://192.168.1.173:9849/snapshot/data/PAXMIN_H.csv.xz'
+#14 324.1 
+--
+#14 330.3 ===  RXQ_ANA : downloading...inserting into DB...Error : COPY returned error : ERROR:  null value in column "RXQ310" of relation "RXQ_ANA" violates not-null constraint
+#14 330.3 DETAIL:  Failing row contains (5, 2, null, null, null, null, null).
+#14 330.3 CONTEXT:  COPY RXQ_ANA, line 2: "5	2	\N	\N	\N	\N	\N"
+#14 330.3 
+#14 330.3 
+--
+#14 330.8 ===  RXQ_RX_H : downloading...inserting into DB...Error : COPY returned error : ERROR:  invalid byte sequence for encoding "UTF8": 0xf6 0x67 0x72 0x65
+#14 330.9 CONTEXT:  COPY RXQ_RX_H, line 3631
+#14 330.9 
+#14 330.9 
+--
+#14 349.1 ===  WPIN_D : downloading...inserting into DB...
+#14 349.1 status
+#14 349.1                          error inserting raw data   error reading raw data 
+#14 349.1                     1562                        5                        2 
+#14 349.1 *** Status summary ***
+#14 349.1 
+#14 349.1         Table                   status
+#14 349.1 338  DRXFCD_H error inserting raw data
+#14 349.1 378      DSII error inserting raw data
+#14 349.1 379      DSPI error inserting raw data
+#14 349.1 1086 PAXMIN_G   error reading raw data
+#14 349.1 1087 PAXMIN_H   error reading raw data
+#14 349.1 1196  RXQ_ANA error inserting raw data
+#14 349.1 1204 RXQ_RX_H error inserting raw data
+#14 349.2 === Finished inserting Raw tables
+#14 349.3 /usr/local/lib/R/bin/exec/R --no-save --no-restore --no-echo --no-restore 
+#14 349.3 --file=/tmp/postgres-rawdata.R
+#14 355.3 ===  DRXFCD_H : downloading...inserting into DB...
+#14 355.3 Error : COPY returned error : ERROR:  invalid byte sequence for encoding "UTF8": 0xc9 0x20
+#14 355.3 CONTEXT:  COPY DRXFCD_H, line 8174
+#14 355.3 
+#14 355.4 ===  DSII : downloading...inserting into DB...Error : COPY returned error : ERROR:  invalid byte sequence for encoding "UTF8": 0x92
+#14 356.2 CONTEXT:  COPY DSII, line 63203
+#14 356.2 
+#14 356.2 
+#14 356.2 ===  DSPI : downloading...inserting into DB...Error : COPY returned error : ERROR:  invalid byte sequence for encoding "UTF8": 0x92
+#14 356.3 CONTEXT:  COPY DSPI, line 6563
+#14 356.3 
+#14 356.3 
+#14 357.4 ===  PAXMIN_G : downloading...Warning in download.file(datafile, destfile = TEMPDATA, quiet = TRUE) :
+#14 357.4   downloaded length 0 != reported length 14
+#14 357.4 Warning in download.file(datafile, destfile = TEMPDATA, quiet = TRUE) :
+#14 357.4   cannot open URL 'http://192.168.1.173:9849/snapshot/data/PAXMIN_G.csv.xz': HTTP status was '404 Not Found'
+#14 357.4 Error in download.file(datafile, destfile = TEMPDATA, quiet = TRUE) : 
+#14 357.4   cannot open URL 'http://192.168.1.173:9849/snapshot/data/PAXMIN_G.csv.xz'
+#14 357.4 
+#14 357.4 ===  PAXMIN_H : downloading...Warning in download.file(datafile, destfile = TEMPDATA, quiet = TRUE) :
+#14 357.4   downloaded length 0 != reported length 14
+#14 357.4 Warning in download.file(datafile, destfile = TEMPDATA, quiet = TRUE) :
+#14 357.4   cannot open URL 'http://192.168.1.173:9849/snapshot/data/PAXMIN_H.csv.xz': HTTP status was '404 Not Found'
+#14 357.4 Error in download.file(datafile, destfile = TEMPDATA, quiet = TRUE) : 
+#14 357.4   cannot open URL 'http://192.168.1.173:9849/snapshot/data/PAXMIN_H.csv.xz'
+#14 357.4 
+#14 357.5 ===  RXQ_ANA : downloading...inserting into DB...
+#14 357.5 Error : COPY returned error : ERROR:  null value in column "RXQ310" of relation "RXQ_ANA" violates not-null constraint
+#14 357.5 DETAIL:  Failing row contains (5, 2, null, null, null, null, null).
+#14 357.5 CONTEXT:  COPY RXQ_ANA, line 2: "5	2	\N	\N	\N	\N	\N"
+#14 357.5 
+#14 357.5 ===  RXQ_RX_H : downloading...inserting into DB...
+#14 357.6 Error : COPY returned error : ERROR:  invalid byte sequence for encoding "UTF8": 0xf6 0x67 0x72 0x65
+#14 357.6 CONTEXT:  COPY RXQ_RX_H, line 3631
+#14 357.6 
+#14 358.2 status
+#14 358.2                          error inserting raw data   error reading raw data 
+#14 358.2                     1562                        5                        2 
+#14 358.2 *** Status summary ***
+#14 358.2 
+#14 358.2         Table                   status
+#14 358.2 338  DRXFCD_H error inserting raw data
+#14 358.2 378      DSII error inserting raw data
+#14 358.2 379      DSPI error inserting raw data
+#14 358.2 1086 PAXMIN_G   error reading raw data
+#14 358.2 1087 PAXMIN_H   error reading raw data
+#14 358.2 1196  RXQ_ANA error inserting raw data
+#14 358.2 1204 RXQ_RX_H error inserting raw data
+#14 358.2 === Finished inserting Raw tables
+#14 358.4  * Stopping PostgreSQL 16 database server
+#14 361.7    ...done.
+#14 DONE 361.8s
+
+#15 [11/27] COPY Code/utils/translate-table.R /tmp/translate-table.R
+#15 DONE 0.1s
+
+#16 [12/27] COPY Code/postgres-translated.R /tmp/postgres-translated.R
+#16 DONE 0.1s
+
+#17 [13/27] COPY Code/postgres-primary-keys.R /tmp/postgres-primary-keys.R
+#17 DONE 0.0s
+
+#18 [14/27] RUN service postgresql start     && sleep 5     && Rscript /tmp/postgres-translated.R     && Rscript /tmp/postgres-primary-keys.R     && service postgresql stop
+#18 0.333  * Starting PostgreSQL 16 database server
+#18 2.667    ...done.
+#18 7.819 /usr/local/lib/R/bin/exec/R --no-save --no-restore --no-echo --no-restore 
+#18 7.819 --file=/tmp/postgres-translated.R
+--
+#18 15.30 ===  ALB_CR_G : translating...Warning in raw2translated(raw_data, cb, cleanse_numeric = cleanse_numeric) :
+#18 15.33   Missing codebook table, skipping translation for variable: URXUMA
+#18 15.33 Warning in raw2translated(raw_data, cb, cleanse_numeric = cleanse_numeric) :
+#18 15.33   Missing codebook table, skipping translation for variable: URXUMS
+#18 15.33 Warning in raw2translated(raw_data, cb, cleanse_numeric = cleanse_numeric) :
+#18 15.33   Missing codebook table, skipping translation for variable: URXUCR
+#18 15.33 Warning in raw2translated(raw_data, cb, cleanse_numeric = cleanse_numeric) :
+#18 15.33   Missing codebook table, skipping translation for variable: URXCRS
+#18 15.33 Warning in raw2translated(raw_data, cb, cleanse_numeric = cleanse_numeric) :
+#18 15.33   Missing codebook table, skipping translation for variable: URDACT
+#18 15.33 [ 7821 x 6 ] inserting into DB...
+--
+#18 51.91 ===  BPX_C : translating...[ 9643 x 30 ] Warning in raw2translated(raw_data, cb, cleanse_numeric = cleanse_numeric) :
+#18 51.96   Variable not found in codebook, skipping translation for variable: BPXSAR
+#18 51.96 Warning in raw2translated(raw_data, cb, cleanse_numeric = cleanse_numeric) :
+#18 51.96   Variable not found in codebook, skipping translation for variable: BPXDAR
+#18 51.96 inserting into DB...
+--
+#18 68.41 ===  DOXPOL_I : translating...[ 265 x 66 ] inserting into DB...Warning in doTryCatch(return(expr), name, parentenv, handler) :
+#18 68.43   Column(s) specified as non-null do not exist in data: SEQN
+#18 68.45 
+--
+#18 253.9 ===  DRXFCD_H : translating...
+#18 254.2 Error : Failed to prepare query : ERROR:  relation "Raw.DRXFCD_H" does not exist
+#18 254.2 LINE 1: SELECT * FROM  "Raw"."DRXFCD_H"
+#18 254.2                        ^
+#18 254.2 
+#18 254.2 ===  DRXFCD_I : translating...Warning in raw2translated(raw_data, cb, cleanse_numeric = cleanse_numeric) :
+#18 254.3   Variable not found in codebook, skipping translation for variable: DRXFDCD
+#18 254.3 Warning in raw2translated(raw_data, cb, cleanse_numeric = cleanse_numeric) :
+#18 254.3   Variable not found in codebook, skipping translation for variable: DRXFCSD
+#18 254.3 Warning in raw2translated(raw_data, cb, cleanse_numeric = cleanse_numeric) :
+#18 254.3   Variable not found in codebook, skipping translation for variable: DRXFCLD
+#18 254.3 [ 8690 x 3 ] inserting into DB...
+#18 254.4 ===  DRXFCD_J : translating...[ 7083 x 3 ] Warning in raw2translated(raw_data, cb, cleanse_numeric = cleanse_numeric) :
+#18 254.4   Variable not found in codebook, skipping translation for variable: DRXFDCD
+#18 254.4 Warning in raw2translated(raw_data, cb, cleanse_numeric = cleanse_numeric) :
+#18 254.4   Variable not found in codebook, skipping translation for variable: DRXFCSD
+#18 254.4 Warning in raw2translated(raw_data, cb, cleanse_numeric = cleanse_numeric) :
+#18 254.4   Variable not found in codebook, skipping translation for variable: DRXFCLD
+#18 254.4 inserting into DB...
+#18 254.4 ===  DRXFCD_L : translating...[ 5432 x 3 ] inserting into DB...Warning in doTryCatch(return(expr), name, parentenv, handler) :
+#18 254.4   Column(s) specified as non-null do not exist in data: SEQN
+#18 254.5 
+#18 254.5 ===  DRXFMT : translating...Warning in raw2translated(raw_data, cb, cleanse_numeric = cleanse_numeric) :
+#18 254.5   Variable not found in codebook, skipping translation for variable: FMTNAME
+#18 254.5 Warning in raw2translated(raw_data, cb, cleanse_numeric = cleanse_numeric) :
+#18 254.5   Variable not found in codebook, skipping translation for variable: START
+#18 254.5 Warning in raw2translated(raw_data, cb, cleanse_numeric = cleanse_numeric) :
+#18 254.5   Variable not found in codebook, skipping translation for variable: LABEL
+#18 254.5 [ 4311 x 3 ] inserting into DB...
+#18 254.5 ===  DRXFMT_B : translating...Warning in raw2translated(raw_data, cb, cleanse_numeric = cleanse_numeric) :
+#18 254.5   Variable not found in codebook, skipping translation for variable: FMTNAME
+#18 254.5 Warning in raw2translated(raw_data, cb, cleanse_numeric = cleanse_numeric) :
+#18 254.5   Variable not found in codebook, skipping translation for variable: START
+#18 254.5 Warning in raw2translated(raw_data, cb, cleanse_numeric = cleanse_numeric) :
+#18 254.5   Variable not found in codebook, skipping translation for variable: LABEL
+#18 254.5 [ 6974 x 3 ] inserting into DB...
+--
+#18 278.8 ===  DS1IDS_E : translating...
+#18 278.8 Error in char2categorical(x, cb) : Expected character, found double
+#18 278.8 ===  DS1IDS_F : translating...Error in char2categorical(x, cb) : Expected character, found double
+#18 278.9 
+#18 278.9 ===  DS1IDS_G : translating...Warning in code2numeric(x, cb, cleanse = cleanse_numeric) :
+#18 278.9   non-numeric descriptions found in apparently numeric variable: 1, 2, 3
+#18 278.9 
+#18 278.9 Error in char2categorical(x, cb) : Expected character, found double
+#18 278.9 ===  DS1IDS_H : translating...Error in char2categorical(x, cb) : Expected character, found double
+#18 279.0 
+#18 279.0 ===  DS1IDS_I : translating...Error in char2categorical(x, cb) : Expected character, found double
+#18 279.0 
+--
+#18 279.7 ===  DS1TOT_G : translating...Warning in code2numeric(x, cb, cleanse = cleanse_numeric) :
+#18 279.7   non-numeric descriptions found in apparently numeric variable: 1, 2, 3
+#18 279.7 [ 9338 x 49 ] inserting into DB...
+--
+#18 280.6 ===  DS2IDS_E : translating...Error in char2categorical(x, cb) : Expected character, found double
+#18 280.6 
+#18 280.6 ===  DS2IDS_F : translating...
+#18 280.7 Error in char2categorical(x, cb) : Expected character, found double
+#18 280.7 ===  DS2IDS_G : translating...Error in char2categorical(x, cb) : Expected character, found double
+#18 280.7 
+#18 280.7 ===  DS2IDS_H : translating...Error in char2categorical(x, cb) : Expected character, found double
+#18 280.8 
+#18 280.8 ===  DS2IDS_I : translating...Error in char2categorical(x, cb) : Expected character, found double
+#18 280.8 
+--
+#18 281.5 ===  DS2TOT_G : translating...Warning in code2numeric(x, cb, cleanse = cleanse_numeric) :
+#18 281.6   non-numeric descriptions found in apparently numeric variable: 1, 2, 3
+#18 281.6 [ 9338 x 49 ] inserting into DB...
+--
+#18 283.6 ===  DSBI : translating...Error in char2categorical(x, cb) : Expected character, found integer
+#18 283.6 
+#18 283.7 ===  DSII : translating...
+#18 283.7 Error : Failed to prepare query : ERROR:  relation "Raw.DSII" does not exist
+#18 283.7 LINE 1: SELECT * FROM  "Raw"."DSII"
+#18 283.7                        ^
+#18 283.7 
+#18 283.7 ===  DSPI : translating...Error : Failed to prepare query : ERROR:  relation "Raw.DSPI" does not exist
+#18 283.7 LINE 1: SELECT * FROM  "Raw"."DSPI"
+#18 283.7                        ^
+#18 283.7 
+#18 283.7 
+--
+#18 283.8 ===  DSQ2_B : translating...Error in char2categorical(x, cb) : Expected character, found double
+#18 283.8 
+#18 283.8 ===  DSQ2_C : translating...Error in char2categorical(x, cb) : Expected character, found double
+#18 283.9 
+#18 283.9 ===  DSQ2_D : translating...
+#18 283.9 Error in char2categorical(x, cb) : Expected character, found double
+--
+#18 284.0 ===  DSQFILE2 : translating...
+#18 284.2 Error in char2categorical(x, cb) : Expected character, found double
+#18 284.2 ===  DSQIDS_E : translating...Error in char2categorical(x, cb) : Expected character, found double
+#18 284.3 
+#18 284.3 ===  DSQIDS_F : translating...Error in char2categorical(x, cb) : Expected character, found double
+#18 284.4 
+#18 284.4 ===  DSQIDS_G : translating...
+#18 284.4 Error in char2categorical(x, cb) : Expected character, found double
+#18 284.4 ===  DSQIDS_H : translating...Error in char2categorical(x, cb) : Expected character, found double
+#18 284.5 
+#18 284.5 ===  DSQIDS_I : translating...Error in char2categorical(x, cb) : Expected character, found double
+#18 284.8 
+--
+#18 336.3 ===  FOLFMS_L : translating...Warning in raw2translated(raw_data, cb, cleanse_numeric = cleanse_numeric) :
+#18 336.3   Variable not found in codebook, skipping translation for variable: WTPH2YR
+#18 336.3 [ 8727 x 16 ] inserting into DB...
+#18 336.6 ===  FOODLK_C : translating...Warning in raw2translated(raw_data, cb, cleanse_numeric = cleanse_numeric) :
+#18 336.7   Variable not found in codebook, skipping translation for variable: FFQ_FOOD
+#18 336.7 Warning in raw2translated(raw_data, cb, cleanse_numeric = cleanse_numeric) :
+#18 336.7   Variable not found in codebook, skipping translation for variable: VALUE
+#18 336.7 [ 216 x 2 ] inserting into DB...
+#18 336.7 ===  FOODLK_D : translating...[ 216 x 2 ] Warning in raw2translated(raw_data, cb, cleanse_numeric = cleanse_numeric) :
+#18 336.7   Variable not found in codebook, skipping translation for variable: FFQ_FOOD
+#18 336.7 Warning in raw2translated(raw_data, cb, cleanse_numeric = cleanse_numeric) :
+#18 336.7   Variable not found in codebook, skipping translation for variable: VALUE
+#18 336.7 inserting into DB...
+--
+#18 350.4 ===  HPVSWR_F : translating...Warning in raw2translated(raw_data, cb, cleanse_numeric = cleanse_numeric) :
+#18 350.4   Variable not found in codebook, skipping translation for variable: LBDRPI
+#18 350.4 [ 2244 x 42 ] inserting into DB...
+--
+#18 381.7 ===  OHXDEN_B : translating...
+#18 381.8 Error in char2categorical(x, cb) : Expected character, found integer
+#18 381.8 ===  OHXDEN_C : translating...
+#18 382.4 Error in char2categorical(x, cb) : Expected character, found integer
+--
+#18 383.0 ===  OHXDEN_G : translating...
+#18 383.1 Error in char2categorical(x, cb) : Expected character, found integer
+#18 383.1 ===  OHXDEN_H : translating...Error in char2categorical(x, cb) : Expected character, found integer
+#18 383.5 
+#18 383.5 ===  OHXDEN_I : translating...Error in char2categorical(x, cb) : Expected character, found integer
+#18 384.1 
+#18 384.1 ===  OHXDEN_J : translating...Error in char2categorical(x, cb) : Expected character, found integer
+#18 384.4 
+#18 384.4 ===  OHXDENT : translating...
+#18 384.7 Error in char2categorical(x, cb) : Expected character, found integer
+--
+#18 387.9 ===  OHXPRL_B : translating...[ 7130 x 172 ] Warning in raw2translated(raw_data, cb, cleanse_numeric = cleanse_numeric) :
+#18 388.0   Variable not found in codebook, skipping translation for variable: OHASCST5
+#18 388.0 inserting into DB...
+--
+#18 389.4 ===  OHXPRU_B : translating...[ 7130 x 172 ] Warning in raw2translated(raw_data, cb, cleanse_numeric = cleanse_numeric) :
+#18 389.6   Variable not found in codebook, skipping translation for variable: OHASCST5
+#18 389.6 inserting into DB...
+--
+#18 397.3 ===  OSQ_B : translating...Warning in raw2translated(raw_data, cb, cleanse_numeric = cleanse_numeric) :
+#18 397.4   Variable not found in codebook, skipping translation for variable: OSD030AA
+#18 397.4 Warning in raw2translated(raw_data, cb, cleanse_numeric = cleanse_numeric) :
+#18 397.4   Variable not found in codebook, skipping translation for variable: OSD030AB
+#18 397.4 Warning in raw2translated(raw_data, cb, cleanse_numeric = cleanse_numeric) :
+#18 397.4   Variable not found in codebook, skipping translation for variable: OSD030AC
+#18 397.4 Warning in raw2translated(raw_data, cb, cleanse_numeric = cleanse_numeric) :
+#18 397.4   Variable not found in codebook, skipping translation for variable: OSD030BA
+#18 397.4 Warning in raw2translated(raw_data, cb, cleanse_numeric = cleanse_numeric) :
+#18 397.4   Variable not found in codebook, skipping translation for variable: OSD030BB
+#18 397.4 Warning in raw2translated(raw_data, cb, cleanse_numeric = cleanse_numeric) :
+#18 397.4   Variable not found in codebook, skipping translation for variable: OSD030BC
+#18 397.4 Warning in raw2translated(raw_data, cb, cleanse_numeric = cleanse_numeric) :
+#18 397.4   Variable not found in codebook, skipping translation for variable: OSD030BD
+#18 397.4 Warning in raw2translated(raw_data, cb, cleanse_numeric = cleanse_numeric) :
+#18 397.4   Variable not found in codebook, skipping translation for variable: OSD030BE
+#18 397.4 Warning in raw2translated(raw_data, cb, cleanse_numeric = cleanse_numeric) :
+#18 397.4   Variable not found in codebook, skipping translation for variable: OSD030CA
+#18 397.4 Warning in raw2translated(raw_data, cb, cleanse_numeric = cleanse_numeric) :
+#18 397.4   Variable not found in codebook, skipping translation for variable: OSD030CB
+#18 397.4 Warning in raw2translated(raw_data, cb, cleanse_numeric = cleanse_numeric) :
+#18 397.4   Variable not found in codebook, skipping translation for variable: OSD030CC
+#18 397.4 Warning in raw2translated(raw_data, cb, cleanse_numeric = cleanse_numeric) :
+#18 397.4   Variable not found in codebook, skipping translation for variable: OSD030CD
+#18 397.4 Warning in raw2translated(raw_data, cb, cleanse_numeric = cleanse_numeric) :
+#18 397.4   Variable not found in codebook, skipping translation for variable: OSD030CE
+#18 397.4 Warning in raw2translated(raw_data, cb, cleanse_numeric = cleanse_numeric) :
+#18 397.4   Variable not found in codebook, skipping translation for variable: OSD030CF
+#18 397.4 [ 5411 x 50 ] inserting into DB...
+--
+#18 454.0 ===  P_DRXFCD : translating...Warning in raw2translated(raw_data, cb, cleanse_numeric = cleanse_numeric) :
+#18 454.0   Variable not found in codebook, skipping translation for variable: DRXFDCD
+#18 454.0 Warning in raw2translated(raw_data, cb, cleanse_numeric = cleanse_numeric) :
+#18 454.0   Variable not found in codebook, skipping translation for variable: DRXFCSD
+#18 454.0 Warning in raw2translated(raw_data, cb, cleanse_numeric = cleanse_numeric) :
+#18 454.0   Variable not found in codebook, skipping translation for variable: DRXFCLD
+#18 454.0 Warning in raw2translated(raw_data, cb, cleanse_numeric = cleanse_numeric) :
+#18 454.0   Variable not found in codebook, skipping translation for variable: DRXFFCSD
+#18 454.0 Warning in raw2translated(raw_data, cb, cleanse_numeric = cleanse_numeric) :
+#18 454.0   Variable not found in codebook, skipping translation for variable: DRXFFDLD
+#18 454.0 [ 7444 x 5 ] inserting into DB...
+--
+#18 460.2 ===  P_OHXDEN : translating...
+#18 460.4 Error in char2categorical(x, cb) : Expected character, found integer
+--
+#18 504.2 ===  PAXMIN_G : translating...
+#18 504.2 Error : Failed to prepare query : ERROR:  relation "Raw.PAXMIN_G" does not exist
+#18 504.2 LINE 1: SELECT * FROM  "Raw"."PAXMIN_G"
+#18 504.2                        ^
+#18 504.2 
+#18 504.3 ===  PAXMIN_H : translating...
+#18 504.3 Error : Failed to prepare query : ERROR:  relation "Raw.PAXMIN_H" does not exist
+#18 504.3 LINE 1: SELECT * FROM  "Raw"."PAXMIN_H"
+#18 504.3                        ^
+#18 504.3 
+--
+#18 514.4 ===  PFC_POOL : translating...[ 264 x 7 ] inserting into DB...
+#18 514.4 Error : COPY returned error : ERROR:  null value in column "PFCANA" of relation "PFC_POOL" violates not-null constraint
+#18 514.4 DETAIL:  Failing row contains (null, non-Hispanic black, female, 3-5 years, Pool #1, 0.8, at or above the detection limit).
+#18 514.4 CONTEXT:  COPY PFC_POOL, line 1: "\N	non-Hispanic black	female	3-5 years	Pool #1	0.80000000000000004	at or above the detection limit"
+#18 514.4 
+--
+#18 519.3 ===  POOLTF_D : translating...Warning in raw2translated(raw_data, cb, cleanse_numeric = cleanse_numeric) :
+#18 519.3   Variable not found in codebook, skipping translation for variable: WTSC2YRA
+#18 519.3 [ 2345 x 3 ] inserting into DB...
+#18 519.3 ===  POOLTF_E : translating...Warning in raw2translated(raw_data, cb, cleanse_numeric = cleanse_numeric) :
+#18 519.3   Variable not found in codebook, skipping translation for variable: WTSA2YRA
+#18 519.3 [ 2282 x 3 ] inserting into DB...
+--
+#18 524.4 ===  RXQ_ANA : translating...Error : Failed to prepare query : ERROR:  relation "Raw.RXQ_ANA" does not exist
+#18 524.4 LINE 1: SELECT * FROM  "Raw"."RXQ_ANA"
+#18 524.4                        ^
+#18 524.4 
+#18 524.4 
+#18 524.4 ===  RXQ_RX : translating...Error in char2categorical(x, cb) : Expected character, found integer
+#18 524.4 
+#18 524.4 ===  RXQ_RX_B : translating...Error in char2categorical(x, cb) : Expected character, found integer
+#18 524.4 
+--
+#18 524.9 ===  RXQ_RX_H : translating...Error : Failed to prepare query : ERROR:  relation "Raw.RXQ_RX_H" does not exist
+#18 524.9 LINE 1: SELECT * FROM  "Raw"."RXQ_RX_H"
+#18 524.9                        ^
+#18 524.9 
+#18 524.9 
+--
+#18 529.9 ===  SSBFR_B : translating...[ 78 x 15 ] inserting into DB...Error : COPY returned error : ERROR:  null value in column "POOLID" of relation "SSBFR_B" violates not-null constraint
+#18 529.9 DETAIL:  Failing row contains (null, Male, Non-Hispanic White, 12 Yrs. to 19 Yrs., 34, null, 4.2, 110, 4.6, 30.9, 19.7, 1.6, 23.4, 2.9, null).
+#18 529.9 CONTEXT:  COPY SSBFR_B, line 1: "\N	Male	Non-Hispanic White	12 Yrs. to 19 Yrs.	34	\N	4.20000000000000018	110.000000000000000	4.599999..."
+#18 529.9 
+#18 529.9 
+--
+#18 532.2 ===  SSPCB_B : translating...[ 78 x 34 ] inserting into DB...Error : COPY returned error : ERROR:  null value in column "POOLID" of relation "SSPCB_B" violates not-null constraint
+#18 532.2 DETAIL:  Failing row contains (null, Male, Non-Hispanic White, 12 Yrs. to 19 Yrs., 34, null, null, null, null, 0.6, 2.2, 0.5, 2.6, 0.7, 0.5, 0.5, 6.6, 1.1, 0.5, 0.5, 11.2, 2.3, 0.5, 0.4, 0.6, 6.3, 0.9, 2.3, 0.8, 0.5, 1.5, 1.3, 0.6, 0.5).
+#18 532.2 CONTEXT:  COPY SSPCB_B, line 1: "\N	Male	Non-Hispanic White	12 Yrs. to 19 Yrs.	34	\N	\N	\N	\N	0.59999999999999998	2.2000000000000002	..."
+#18 532.2 
+#18 532.2 
+--
+#18 532.5 ===  SSPST_B : translating...[ 78 x 14 ] inserting into DB...
+#18 532.5 Error : COPY returned error : ERROR:  null value in column "POOLID" of relation "SSPST_B" violates not-null constraint
+#18 532.5 DETAIL:  Failing row contains (null, Male, Non-Hispanic White, 12 Yrs. to 19 Yrs., 34, 19.9, 4.5, 0.4, 12.1, 10.1, 128.9, 0.7, 3.3, 0.8).
+#18 532.5 CONTEXT:  COPY SSPST_B, line 1: "\N	Male	Non-Hispanic White	12 Yrs. to 19 Yrs.	34	19.8999999999999986	4.50000000000000000	0.400000000..."
+#18 532.5 
+--
+#18 541.0 ===  VARLK_C : translating...Warning in raw2translated(raw_data, cb, cleanse_numeric = cleanse_numeric) :
+#18 541.0   Variable not found in codebook, skipping translation for variable: FFQ_VAR
+#18 541.0 Warning in raw2translated(raw_data, cb, cleanse_numeric = cleanse_numeric) :
+#18 541.0   Variable not found in codebook, skipping translation for variable: VALUE
+#18 541.0 [ 152 x 2 ] inserting into DB...
+#18 541.0 ===  VARLK_D : translating...[ 152 x 2 ] Warning in raw2translated(raw_data, cb, cleanse_numeric = cleanse_numeric) :
+#18 541.0   Variable not found in codebook, skipping translation for variable: FFQ_VAR
+#18 541.0 Warning in raw2translated(raw_data, cb, cleanse_numeric = cleanse_numeric) :
+#18 541.0   Variable not found in codebook, skipping translation for variable: VALUE
+#18 541.0 inserting into DB...
+--
+#18 553.6 ===  WPIN_D : translating...[ 3435 x 8 ] inserting into DB...
+#18 553.7 status
+#18 553.7                          error inserting raw data   error translating data 
+#18 553.7                     1528                        4                       37 
+#18 553.7 *** Status summary ***
+#18 553.7 
+#18 553.7         Table                   status
+#18 553.7 338  DRXFCD_H   error translating data
+#18 553.7 353  DS1IDS_E   error translating data
+#18 553.7 354  DS1IDS_F   error translating data
+#18 553.7 355  DS1IDS_G   error translating data
+#18 553.7 356  DS1IDS_H   error translating data
+#18 553.7 357  DS1IDS_I   error translating data
+#18 553.7 365  DS2IDS_E   error translating data
+#18 553.7 366  DS2IDS_F   error translating data
+#18 553.7 367  DS2IDS_G   error translating data
+#18 553.7 368  DS2IDS_H   error translating data
+#18 553.7 369  DS2IDS_I   error translating data
+#18 553.7 377      DSBI   error translating data
+#18 553.7 378      DSII   error translating data
+#18 553.7 379      DSPI   error translating data
+#18 553.7 383    DSQ2_B   error translating data
+#18 553.7 384    DSQ2_C   error translating data
+#18 553.7 385    DSQ2_D   error translating data
+#18 553.7 387  DSQFILE2   error translating data
+#18 553.7 388  DSQIDS_E   error translating data
+#18 553.7 389  DSQIDS_F   error translating data
+#18 553.7 390  DSQIDS_G   error translating data
+#18 553.7 391  DSQIDS_H   error translating data
+#18 553.7 392  DSQIDS_I   error translating data
+#18 553.7 904  OHXDEN_B   error translating data
+#18 553.7 905  OHXDEN_C   error translating data
+#18 553.7 907  OHXDEN_G   error translating data
+#18 553.7 908  OHXDEN_H   error translating data
+#18 553.7 909  OHXDEN_I   error translating data
+#18 553.7 910  OHXDEN_J   error translating data
+#18 553.7 911   OHXDENT   error translating data
+#18 553.7 1017 P_OHXDEN   error translating data
+#18 553.7 1086 PAXMIN_G   error translating data
+#18 553.7 1087 PAXMIN_H   error translating data
+#18 553.7 1119 PFC_POOL error inserting raw data
+#18 553.7 1196  RXQ_ANA   error translating data
+#18 553.7 1197   RXQ_RX   error translating data
+#18 553.7 1198 RXQ_RX_B   error translating data
+#18 553.7 1204 RXQ_RX_H   error translating data
+#18 553.7 1272  SSBFR_B error inserting raw data
+#18 553.7 1330  SSPCB_B error inserting raw data
+#18 553.7 1338  SSPST_B error inserting raw data
+--
+#18 576.2 ===  DOXPOL_I : updating primary keys...
+#18 576.2 Error : Failed to fetch row : ERROR:  column "SEQN" of relation "DOXPOL_I" does not exist
+#18 576.2 
+--
+#18 585.1 ===  DR1IFF_L : updating primary keys...Error : Failed to fetch row : ERROR:  could not create unique index "DR1IFF_L_pkey"
+#18 585.3 DETAIL:  Key ("SEQN")=(130378) is duplicated.
+#18 585.3 
+#18 585.3 
+--
+#18 588.4 ===  DR2IFF_L : updating primary keys...Error : Failed to fetch row : ERROR:  could not create unique index "DR2IFF_L_pkey"
+#18 588.4 DETAIL:  Key ("SEQN")=(130378) is duplicated.
+#18 588.4 
+#18 588.4 
+--
+#18 589.1 ===  DRXFCD_H : updating primary keys...Error : Failed to fetch row : ERROR:  relation "Raw.DRXFCD_H" does not exist
+#18 589.1 
+#18 589.1 
+--
+#18 589.1 ===  DRXFCD_L : updating primary keys...
+#18 589.1 Error : Failed to fetch row : ERROR:  column "SEQN" of relation "DRXFCD_L" does not exist
+#18 589.1 
+--
+#18 590.1 ===  DS1IDS_E : updating primary keys...
+#18 590.1 Error : x must be character or SQL
+#18 590.1 ===  DS1IDS_F : updating primary keys...
+#18 590.1 Error : x must be character or SQL
+#18 590.1 ===  DS1IDS_G : updating primary keys...Error : x must be character or SQL
+#18 590.1 
+#18 590.1 ===  DS1IDS_H : updating primary keys...
+#18 590.1 Error : x must be character or SQL
+#18 590.1 ===  DS1IDS_I : updating primary keys...
+#18 590.1 Error : x must be character or SQL
+#18 590.1 ===  DS1IDS_J : updating primary keys...Error : x must be character or SQL
+#18 590.1 
+--
+#18 590.2 ===  DS1TOT_J : updating primary keys...
+#18 590.3 Error : x must be character or SQL
+--
+#18 590.3 ===  DS2IDS_F : updating primary keys...Error : x must be character or SQL
+#18 590.3 
+#18 590.3 ===  DS2IDS_G : updating primary keys...Error : Failed to fetch row : ERROR:  relation "Translated.DS2IDS_G" does not exist
+#18 590.3 
+#18 590.3 
+#18 590.3 ===  DS2IDS_H : updating primary keys...Error : x must be character or SQL
+#18 590.3 
+#18 590.3 ===  DS2IDS_I : updating primary keys...Error : x must be character or SQL
+#18 590.3 
+#18 590.3 ===  DS2IDS_J : updating primary keys...Error : x must be character or SQL
+#18 590.3 
+--
+#18 590.7 ===  DS2TOT_J : updating primary keys...
+#18 590.8 Error : x must be character or SQL
+--
+#18 590.8 ===  DSII : updating primary keys...Error : Failed to fetch row : ERROR:  relation "Raw.DSII" does not exist
+#18 590.8 
+#18 590.8 
+#18 590.8 ===  DSPI : updating primary keys...
+#18 590.8 Error : Failed to fetch row : ERROR:  relation "Raw.DSPI" does not exist
+#18 590.8 
+--
+#18 591.2 ===  DSQ2_B : updating primary keys...Error : x must be character or SQL
+#18 591.2 
+#18 591.2 ===  DSQ2_C : updating primary keys...Error : x must be character or SQL
+#18 591.2 
+#18 591.2 ===  DSQ2_D : updating primary keys...Error : Failed to fetch row : ERROR:  relation "Translated.DSQ2_D" does not exist
+#18 591.2 
+#18 591.2 
+--
+#18 591.2 ===  DSQFILE2 : updating primary keys...Error : Failed to fetch row : ERROR:  relation "Translated.DSQFILE2" does not exist
+#18 591.5 
+#18 591.5 
+#18 591.5 ===  DSQIDS_E : updating primary keys...
+#18 591.5 Error : x must be character or SQL
+#18 591.5 ===  DSQIDS_F : updating primary keys...Error : Failed to fetch row : ERROR:  relation "Translated.DSQIDS_F" does not exist
+#18 591.5 
+#18 591.5 
+#18 591.5 ===  DSQIDS_G : updating primary keys...
+#18 591.5 Error : x must be character or SQL
+#18 591.5 ===  DSQIDS_H : updating primary keys...
+#18 591.5 Error : x must be character or SQL
+#18 591.5 ===  DSQIDS_I : updating primary keys...Error : x must be character or SQL
+#18 591.5 
+#18 591.5 ===  DSQIDS_J : updating primary keys...Error : x must be character or SQL
+#18 591.5 
+--
+#18 618.0 ===  OHXDEN_B : updating primary keys...
+#18 618.0 Error : Failed to fetch row : ERROR:  relation "Translated.OHXDEN_B" does not exist
+#18 618.0 
+#18 618.0 ===  OHXDEN_C : updating primary keys...
+#18 618.1 Error : Failed to fetch row : ERROR:  relation "Translated.OHXDEN_C" does not exist
+#18 618.1 
+--
+#18 618.1 ===  OHXDEN_G : updating primary keys...
+#18 618.2 Error : Failed to fetch row : ERROR:  relation "Translated.OHXDEN_G" does not exist
+#18 618.2 
+#18 618.2 ===  OHXDEN_H : updating primary keys...
+#18 618.2 Error : Failed to fetch row : ERROR:  relation "Translated.OHXDEN_H" does not exist
+#18 618.2 
+#18 618.2 ===  OHXDEN_I : updating primary keys...
+#18 618.2 Error : Failed to fetch row : ERROR:  relation "Translated.OHXDEN_I" does not exist
+#18 618.2 
+#18 618.2 ===  OHXDEN_J : updating primary keys...
+#18 618.2 Error : Failed to fetch row : ERROR:  relation "Translated.OHXDEN_J" does not exist
+#18 618.2 
+#18 618.3 ===  OHXDENT : updating primary keys...
+#18 618.3 Error : Failed to fetch row : ERROR:  relation "Translated.OHXDENT" does not exist
+#18 618.3 
+--
+#18 623.0 ===  P_DS1IDS : updating primary keys...Error : x must be character or SQL
+#18 623.0 
+--
+#18 623.0 ===  P_DS2IDS : updating primary keys...Error : x must be character or SQL
+#18 623.0 
+--
+#18 623.1 ===  P_DSQIDS : updating primary keys...Error : x must be character or SQL
+#18 623.1 
+--
+#18 625.7 ===  P_OHXDEN : updating primary keys...
+#18 625.7 Error : Failed to fetch row : ERROR:  relation "Translated.P_OHXDEN" does not exist
+#18 625.7 
+--
+#18 626.5 ===  P_RXQ_RX : updating primary keys...Error : x must be character or SQL
+#18 626.5 
+--
+#18 628.9 ===  PAQIAF : updating primary keys...Error : x must be character or SQL
+#18 628.9 
+#18 628.9 ===  PAQIAF_B : updating primary keys...Error : x must be character or SQL
+#18 628.9 
+#18 628.9 ===  PAQIAF_C : updating primary keys...
+#18 628.9 Error : x must be character or SQL
+#18 628.9 ===  PAQIAF_D : updating primary keys...Error : x must be character or SQL
+#18 628.9 
+--
+#18 636.8 ===  PAXMIN_G : updating primary keys...Error : Failed to fetch row : ERROR:  relation "Raw.PAXMIN_G" does not exist
+#18 636.8 
+#18 636.8 
+#18 636.8 ===  PAXMIN_H : updating primary keys...Error : Failed to fetch row : ERROR:  relation "Raw.PAXMIN_H" does not exist
+#18 636.8 
+#18 636.8 
+--
+#18 638.0 ===  PFC_POOL : updating primary keys...Error : Failed to fetch row : ERROR:  relation "Translated.PFC_POOL" does not exist
+#18 638.0 
+#18 638.0 
+--
+#18 643.0 ===  RXQ_ANA : updating primary keys...Error : Failed to fetch row : ERROR:  relation "Raw.RXQ_ANA" does not exist
+#18 643.0 
+#18 643.0 
+#18 643.0 ===  RXQ_RX : updating primary keys...Error : x must be character or SQL
+#18 643.0 
+#18 643.0 Error : x must be character or SQL
+#18 643.0 ===  RXQ_RX_B : updating primary keys...
+#18 643.0 Error : x must be character or SQL
+#18 643.0 ===  RXQ_RX_C : updating primary keys...
+#18 643.0 Error : x must be character or SQL
+#18 643.0 ===  RXQ_RX_D : updating primary keys...
+#18 643.0 Error : x must be character or SQL
+--
+#18 643.0 ===  RXQ_RX_F : updating primary keys...
+#18 643.0 Error : x must be character or SQL
+#18 643.1 ===  RXQ_RX_G : updating primary keys...Error : x must be character or SQL
+#18 643.1 
+#18 643.1 ===  RXQ_RX_H : updating primary keys...Error : x must be character or SQL
+#18 643.1 
+#18 643.1 ===  RXQ_RX_I : updating primary keys...Error : x must be character or SQL
+#18 643.1 
+#18 643.1 ===  RXQ_RX_J : updating primary keys...Error : x must be character or SQL
+#18 643.1 
+--
+#18 643.4 ===  RXQANA_B : updating primary keys...Error : x must be character or SQL
+#18 643.4 
+#18 643.4 ===  RXQANA_C : updating primary keys...Error : x must be character or SQL
+#18 643.4 
+--
+#18 646.2 ===  SSBFR_B : updating primary keys...
+#18 646.2 Error : Failed to fetch row : ERROR:  relation "Translated.SSBFR_B" does not exist
+#18 646.2 
+--
+#18 648.7 ===  SSPCB_B : updating primary keys...
+#18 648.7 Error : Failed to fetch row : ERROR:  relation "Translated.SSPCB_B" does not exist
+#18 648.7 
+--
+#18 648.8 ===  SSPST_B : updating primary keys...Error : Failed to fetch row : ERROR:  relation "Translated.SSPST_B" does not exist
+#18 648.8 
+#18 648.8 
+--
+

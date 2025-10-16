@@ -74,7 +74,7 @@ RUN service postgresql start \
 #------------------------------------------------------------------------------
 
 COPY Code/copy-htmldocs.R /tmp/copy-htmldocs.R
-RUN mkdir /htmldoc \
+RUN mkdir -p /htmldoc/Nchs/Data/Nhanes/Public \
     && Rscript /tmp/copy-htmldocs.R
 
 #------------------------------------------------------------------------------
